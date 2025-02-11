@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tax Calculator</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+        label {
+            font-size: 16px;
+            color: #333;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+     
+</head>
+<body>
+    <h1>Tax Calculator</h1>
+    <form action="taxCalculator2" method="GET">
+        <label for="income">Enter Income: </label>
+        <input type="number" id="income" name="income"><br>
+        <label for="income">Enter Tax Rate: </label>
+        <input type="number" id="taxrate" name="taxrate" step="any">
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
